@@ -40,17 +40,17 @@ const dragend_handler = ev => {
   setDraggable(document.querySelectorAll('li'));
   
   // if correct
-  if(isCorrect(letters, state.content)) {
+  if(isCorrect(tiles, state.content)) {
       showModal();
   }
 }
 
 // select the list items
 let ul = document.querySelectorAll('li');;
-const letters= ["A", "B", "C", "D", "E", "F", "G", "H", ""]
+const tiles= ["1", "2", "3", "4", "5", "6", "7", "8", ""]
 
 const state = {}
-state.content = letters;
+state.content = tiles;
 
 // this function sets a unique id for each list item, in the form 'li0' to 'li8'
 const setId = (items) => {
@@ -60,7 +60,7 @@ const setId = (items) => {
 }
 
 function setUp() {
-    fillGrid(ul, letters);
+    fillGrid(ul, tiles);
     setId(ul)
 
     state.content = getState(ul);
@@ -108,11 +108,11 @@ const isCorrect = (solution, content) => {
     return false;
 }
 
-const fillGrid = (items, letters) => {
-    let shuffled = shuffle(letters);
-    // shuffle the letters arraay until there is a combination that is solvable
+const fillGrid = (items, tiles) => {
+    let shuffled = shuffle(tiles);
+    // shuffle the tiles array until there is a combination that is solvable
     while(!isSolvable(shuffled)) {
-        shuffled = shuffle(letters);
+        shuffled = shuffle(tiles);
     }
 
     items.forEach((item, i) => {
@@ -120,7 +120,7 @@ const fillGrid = (items, letters) => {
     })
 }
 
-fillGrid(ul, letters);
+fillGrid(ul, tiles);
 
 /**
  * Getters
