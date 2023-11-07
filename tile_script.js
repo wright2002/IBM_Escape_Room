@@ -46,7 +46,7 @@ const dragend_handler = ev => {
 }
 
 // select the list items
-let ul = document.querySelectorAll('li');;
+let ul = document.querySelectorAll('li');
 const tiles= ["1", "2", "3", "4", "5", "6", "7", "8", ""]
 
 const state = {}

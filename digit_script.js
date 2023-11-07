@@ -1,3 +1,7 @@
+const value1 = 7;
+const value2 = 1;
+const value3 = 4;
+
 
 function setUp() {
     
@@ -5,9 +9,9 @@ function setUp() {
 
 const checkPasskey = () => {
     console.log("checking key");
-	if (document.getElementById("key1").value == "7" && 
-	document.getElementById("key2").value == "1" && 
-	document.getElementById("key3").value == "4"){
+	if (document.getElementById("key1").value == value1.toString() && 
+	document.getElementById("key2").value == value2.toString() && 
+	document.getElementById("key3").value == value3.toString()){
 		console.log("key correct");
 		showModal();
 	}
@@ -16,11 +20,9 @@ const checkPasskey = () => {
 	}
 }
 
-
 const showModal = () => {
     document.getElementById('message').innerText = "You Won!";
     document.getElementById('modal').classList.remove("hide");
-
 }
 
 const hideModal = () => {
