@@ -37,9 +37,16 @@ ul li {
     padding-top: 3rem;
 }
 
-.empty {
-    background: #DAD4EF;
-    border: 2px solid #114B5F;
+.key1 {
+	background: #E1BC3A;
+}
+
+.key2 {
+	background: #699BE0;
+}
+
+.key3 {
+	background: #3E8245;
 }
 
 /* Modal styles */
