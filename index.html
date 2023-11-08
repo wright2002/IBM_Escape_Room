@@ -12,9 +12,33 @@
 <body>
 
 	<h1>Welcome to the IBM Escape Room!</h1>
+	<br>
+	
+	<h4>
+	Hello? This is the System Admin, and I have locked myself in the data center. I'll need your help to get out of here.
+	The door is locked with a padlock, so you'll need to learn the combination in order to free me.
+	The numbers in the combination were scattered around the office as a failsafe in case of this exact event.
+	In order to learn each number, you'll have to solve a puzzle and answer some questions about mainframe security.
+	</h4>
 
-	<a href="tile_puzzle.html">Puzzle #1</a>
-	<a href="digit_puzzle.html">Puzzle #2</a>
+	<div>
+		<label for="pad1">Padlock 1:</label>
+		<input type="number" id="pad1" min="0" max="39">
+		<label for="pad2">Padlock 2:</label>
+		<input type="number" id="pad2" min="0" max="39">
+		<label for="pad3">Padlock 3:</label>
+		<input type="number" id="pad3" min="0" max="39">
+		<button onclick="checkPadlock()"> Try Padlock! </button>
+	</div>
+
+	<div>
+		<br>
+		<a href="tile_puzzle.html">Puzzle #1</a>
+		<br>
+		<br>
+		<br>
+		<a href="digit_puzzle.html">Puzzle #2</a>
+	</div>
 </body>
 
 </html>

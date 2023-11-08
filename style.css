@@ -7,6 +7,10 @@ body {
     padding-top: 2%;
 }
 
+h4 {
+	color: #851616;
+}
+
 /* Modal styles */
 #modal {
     width: 40%;
