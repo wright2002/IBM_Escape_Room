@@ -12,7 +12,7 @@ const checkAnswers = () => {
 }
 
 const showModal = () => {
-    document.getElementById('message').innerText = "Correct!";
+    document.getElementById('message').innerText = "Padlock Number 1: 13";
     document.getElementById('modal').classList.remove("hide");
 }
 

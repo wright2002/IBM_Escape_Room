@@ -1,19 +1,29 @@
-const value1 = 7;
-const value2 = 1;
-const value3 = 4;
-
-let ul = document.querySelectorAll('li');
-const tiles= ["1", "2", "3", "", "", "", 
-			"", "", "", "", "", "", 
-			"", "", "", "", "", "",
-			"", "", "", "", "", "", 
-			"", "", "", "", "", "", 
-			"", "", "", "", "", ""]
+const value1 = getRandomInt(1, 9);
+const value2 = getRandomInt(1, 9);
+const value3 = getRandomInt(1, 9);
 
 
 function setUp() {
-    fillGrid(ul, tiles);
+	let ul = document.querySelectorAll('li');
+	
+	const tiles= ["", "", "", "", "", "", 
+				"", "", "", "", "", "", 
+				"", "", "", "", "", "", 
+				"", "", "", "", "", "", 
+				"", "", "", "", "", "", 
+				"", "", "", "", "", ""]
+				
+	for (let a = 0; a < value1; a++) {
+		tiles[a] = "key1";
+	}
+	for (let b = 12; b < value2 + 12; b++) {
+		tiles[b] = "key2";
+	}
+	for (let c = 24; c < value3 + 24; c++) {
+		tiles[c] = "key3";
+	}
 
+    fillGrid(ul, tiles);
 }
 
 const showModal = () => {
@@ -38,16 +48,6 @@ const checkPasskey = () => {
 	}
 }
 
-const fillGrid = (items, tiles) => {
-    let shuffled = shuffle(tiles);
-
-    items.forEach((item, i) => {
-        item.innerText = shuffled[i];
-    })
-}
-
-fillGrid(ul, tiles);
-
 const shuffle = (arr) => {
     const copy = [...arr];
     // loop over the array
@@ -59,5 +59,22 @@ const shuffle = (arr) => {
         copy[i] = copy[j];
         copy[j] = temp;
     }   
+	console.log(copy);
     return copy;
  }
+
+const fillGrid = (items, tiles) => {
+    let shuffled = shuffle(tiles);
+	
+	for(let i = 0; i < tiles.length; i++) {
+		console.log("loop");
+		if (shuffled[i] != "")
+			document.getElementById(i.toString()).className = shuffled[i];
+	}
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
