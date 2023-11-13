@@ -3,16 +3,14 @@ const value2 = getRandomInt(1, 9);
 const value3 = getRandomInt(1, 9);
 
 
-function setUp() {
-	let ul = document.querySelectorAll('li');
-	
+function setUp() {	
 	const tiles= ["", "", "", "", "", "", 
 				"", "", "", "", "", "", 
 				"", "", "", "", "", "", 
 				"", "", "", "", "", "", 
 				"", "", "", "", "", "", 
 				"", "", "", "", "", ""]
-				
+
 	for (let a = 0; a < value1; a++) {
 		tiles[a] = "key1";
 	}
@@ -23,7 +21,7 @@ function setUp() {
 		tiles[c] = "key3";
 	}
 
-    fillGrid(ul, tiles);
+    fillGrid(tiles);
 }
 
 const showModal = () => {
@@ -63,7 +61,7 @@ const shuffle = (arr) => {
     return copy;
  }
 
-const fillGrid = (items, tiles) => {
+const fillGrid = (tiles) => {
     let shuffled = shuffle(tiles);
 	
 	for(let i = 0; i < tiles.length; i++) {
