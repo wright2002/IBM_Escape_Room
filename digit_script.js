@@ -1,7 +1,7 @@
 const value1 = getRandomInt(1, 9);
 const value2 = getRandomInt(1, 9);
 const value3 = getRandomInt(1, 9);
-
+const value4 = getRandomInt(1, 9);
 
 function setUp() {	
 	const tiles= ["", "", "", "", "", "", 
@@ -14,11 +14,14 @@ function setUp() {
 	for (let a = 0; a < value1; a++) {
 		tiles[a] = "key1";
 	}
-	for (let b = 12; b < value2 + 12; b++) {
+	for (let b = 9; b < value2 + 9; b++) {
 		tiles[b] = "key2";
 	}
-	for (let c = 24; c < value3 + 24; c++) {
+	for (let c = 18; c < value3 + 18; c++) {
 		tiles[c] = "key3";
+	}
+	for (let d = 27; d < value4 + 27; d++) {
+		tiles[d] = "key4";
 	}
 
     fillGrid(tiles);
@@ -37,7 +40,8 @@ const checkPasskey = () => {
     console.log("checking key");
 	if (document.getElementById("key1").value == value1.toString() && 
 	document.getElementById("key2").value == value2.toString() && 
-	document.getElementById("key3").value == value3.toString()){
+	document.getElementById("key3").value == value3.toString() &&
+	document.getElementById("key4").value == value4.toString()){
 		console.log("key correct");
 		showModal();
 	}

@@ -16,6 +16,21 @@ h4 {
 	color: #851616;
 }
 
+table {
+  margin: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2; 
+  padding: 8px;
+  text-align: center;
+}
 
 /* Modal styles */
 #modal {
@@ -33,6 +48,14 @@ h4 {
     color: #FDE1E3;
     margin: 0;
     font-size: 4rem;
+}
+
+.plain {
+	background: #34a832;
+}
+
+.cipher {
+	background: #a8324e;
 }
 
 .hide {
