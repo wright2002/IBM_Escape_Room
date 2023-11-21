@@ -1,6 +1,6 @@
 const checkAnswers = () => {
     console.log("checking answers");
-	if (document.getElementById("q1").value == "True"){
+	if (document.getElementById("q1").value == "Multi-Factor Authentication"){
 		console.log("answers correct");
 		showModal();
 	}
@@ -10,7 +10,7 @@ const checkAnswers = () => {
 }
 
 const showModal = () => {
-    document.getElementById('message').innerText = "Padlock Number 1: 13";
+    document.getElementById('message').innerText = "Padlock Number 2: 24";
     document.getElementById('modal').classList.remove("hide");
 }
 

@@ -10,8 +10,23 @@
 </head>
 
 <body>
-	<h1>Crypto Info Page</h1>
-	<a href="index.html">Back</a>
+	<h1>Cryptography</h1>
+	<div id="modal" class="hide">
+        <div id="header"><button id="closeBtn" onclick="hideModal()">x</button></div>
+        <h1 id="message">Padlock Number 3: 6</h1>
+		<a href="index.html">Homepage</a>
+    </div>
+	<div>
+		<iframe src="Cryptography.pdf" width="900px" height="550px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+	</div>
+	<div>
+		<label>A symmetric key architecture uses one shared key.(True/False) </label>
+		<input type="text" id="q1"></input>
+		<br>
+		<button onclick="checkAnswers()"> Submit answers! </button>
+	</div>
 </body>
+
+<script src="crypto_script.js"></script>
 
 </html>
