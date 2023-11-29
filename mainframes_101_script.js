@@ -1,6 +1,8 @@
 const checkAnswers = () => {
     console.log("checking answers");
-	if (document.getElementById("q1").value == "True"){
+	if (document.getElementById("q1").value == "True" &&
+		document.getElementById("q2").value == "77" &&
+		document.getElementById("q3").value == "25 billion"){
 		console.log("answers correct");
 		showModal();
 	}

@@ -16,14 +16,23 @@
         <h1 id="message">Padlock Number 3: 6</h1>
 		<a href="index.html">Homepage</a>
     </div>
-	<div>
-		<iframe src="Cryptography.pdf" width="900px" height="550px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-	</div>
-	<div>
-		<label>A symmetric key architecture uses one shared key.(True/False) </label>
-		<input type="text" id="q1"></input>
-		<br>
-		<button onclick="checkAnswers()"> Submit answers! </button>
+	<div class="flex-container">
+		<div class="flex-child">
+			<iframe src="Cryptography.pdf" width="900px" height="550px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+		</div>
+		<div class="flex-child-small">
+			<label>A symmetric key architecture uses one shared key.(True/False) </label>
+			<input type="text" id="q1"></input>
+			<br>
+			<label>Current cryptographic algorithms are threatened by this type of computer. </label>
+			<input type="text" id="q2"></input>
+			<br>
+			<label>z/OS Data Set Encryption provides quantum-safe encryption for data... </label>
+			<input type="text" id="q3"></input>
+			<br>
+			<br>
+			<button onclick="checkAnswers()"> Submit answers! </button>
+		</div>
 	</div>
 </body>
 

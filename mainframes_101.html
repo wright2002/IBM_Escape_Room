@@ -16,14 +16,23 @@
         <h1 id="message">Padlock Number 1: 13</h1>
 		<a href="index.html">Homepage</a>
     </div>
-	<div>
-		<iframe src="Mainframes.pdf" width="900px" height="550px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-	</div>
-	<div>
-		<label>Mainframes are high-performance computing systems designed for large-scale data processing and critical business applications. (True/False) </label>
-		<input type="text" id="q1"></input>
-		<br>
-		<button onclick="checkAnswers()"> Submit answers! </button>
+	<div class="flex-container">
+		<div class="flex-child">
+			<iframe src="Mainframes.pdf" width="900px" height="550px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+		</div>
+		<div class="flex-child-small">
+			<label>Mainframes are high-performance computing systems designed for large-scale data processing and critical business applications. (True/False) </label>
+			<input type="text" id="q1"></input>
+			<br>
+			<label>How many of the top 100 banks use mainframe architecture? </label>
+			<input type="text" id="q2"></input>
+			<br>
+			<label>How many transactions can modern mainframes process per day? </label>
+			<input type="text" id="q3"></input>
+			<br>
+			<br>
+			<button onclick="checkAnswers()"> Submit answers! </button>
+		</div>
 	</div>
 </body>
 

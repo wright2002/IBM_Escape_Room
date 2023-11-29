@@ -16,14 +16,23 @@
         <h1 id="message">Padlock Number 2: 24</h1>
 		<a href="index.html">Homepage</a>
     </div>
-	<div>
-		<iframe src="Authentication.pdf" width="900px" height="550px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-	</div>
-	<div>
-		<label>What does the acronym MFA stand for? </label>
-		<input type="text" id="q1"></input>
-		<br>
-		<button onclick="checkAnswers()"> Submit answers! </button>
+	<div class="flex-container">
+		<div class="flex-child">
+			<iframe src="Authentication.pdf" width="900px" height="550px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+		</div>
+		<div class="flex-child-small">
+			<label>What does the acronym MFA stand for? </label>
+			<input type="text" id="q1"></input>
+			<br>
+			<label>Biometric factors are a common form of Multi-Factor Authentication. (True/False) </label>
+			<input type="text" id="q2"></input>
+			<br>
+			<label>RACF provides the tools neccessary to manage access to... </label>
+			<input type="text" id="q3"></input>
+			<br>
+			<br>
+			<button onclick="checkAnswers()"> Submit answers! </button>
+		</div>
 	</div>
 </body>
 

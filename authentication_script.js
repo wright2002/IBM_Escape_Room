@@ -1,6 +1,8 @@
 const checkAnswers = () => {
     console.log("checking answers");
-	if (document.getElementById("q1").value == "Multi-Factor Authentication"){
+	if (document.getElementById("q1").value == "Multi-Factor Authentication" &&
+		document.getElementById("q2").value == "True" &&
+		document.getElementById("q3").value == "Resources"){
 		console.log("answers correct");
 		showModal();
 	}

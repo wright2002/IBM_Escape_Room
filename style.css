@@ -1,29 +1,92 @@
 body {
     display: flex;
-    background-color: #afaaaa;
+    background-color: #D9534F;
     text-align: center;
     flex-direction: column;
     padding-top: 2%;
+	font-family: 'Courier New', monospace;
 }
 
-h4 {
-	color: #851616;
+h1, h4, label {
+	color: #F5F5F5;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child-small {
+    flex: 0.5;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+.puzzle-container {
+    width: 750px;
+    height: 150px;
+    background-color: #E0E0E0; 
+    border-radius: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6B8EAE;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+}
+
+.puzzle-container:hover {
+	background-color: #666666; 
 }
 
 /* Modal styles */
 #modal {
-    width: 40%;
-    height: 300px;
-    background: #DE5360;
+    width: 60%;
+    height: 500px;
+    background: #6B8EAE;
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Sofia';
+    font-family: 'Courier New', monospace;
 }
 
 #modal #message {
-    color: #FDE1E3;
+    color: #E0E0E0;
     margin: 0;
     font-size: 4rem;
 }
@@ -33,12 +96,12 @@ h4 {
 }
 #modal #header {
     text-align: right;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 #modal #header button {
     padding: 10px;
     border: 0px;
-    background: #456990;
-    color: #E4FDE1;
+    background: #D9534F;
+    color: #666666;
     cursor: pointer;
 }
