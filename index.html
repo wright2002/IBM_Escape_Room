@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>IBM Escape Room</title>
+    <title>z16 Escape Room</title>
 </head>
 
 <body>
@@ -20,23 +20,24 @@
 	
 	<div class="flex-container">
 		<div class="flex-child">
-			<h4>
-			Hello? This is the System Admin, and I have locked myself in the data center. I'll need your help to get out of here.
-			The door is locked with a padlock, so you'll need to learn the combination in order to free me.
-			The numbers in the combination were scattered around the office as a failsafe in case of this exact event.
-			In order to learn each number, you'll have to solve a puzzle and answer some questions about mainframe security.
-			</h4>
+			<div>
+				<video width="500" height="280" controls>
+					<source src="intro_scene.mp4" type="video/mp4">
+				</video>
+			</div>
 			<br>
-			<label for="pad1">Padlock 1:</label>
-			<input type="number" id="pad1" min="0" max="39">
-			<br>
-			<label for="pad2">Padlock 2:</label>
-			<input type="number" id="pad2" min="0" max="39">
-			<br>
-			<label for="pad3">Padlock 3:</label>
-			<input type="number" id="pad3" min="0" max="39">
-			<br>
-			<button onclick="checkPadlock()"> Try Padlock! </button>
+			<div>
+				<label for="pad1">Padlock 1:</label>
+				<input type="number" id="pad1" min="0" max="39">
+				<br>
+				<label for="pad2">Padlock 2:</label>
+				<input type="number" id="pad2" min="0" max="39">
+				<br>
+				<label for="pad3">Padlock 3:</label>
+				<input type="number" id="pad3" min="0" max="39">
+				<br>
+				<button onclick="checkPadlock()"> Try Padlock! </button>
+			</div>
 		</div>
 
 		<div class="flex-child">
