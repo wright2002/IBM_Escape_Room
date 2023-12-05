@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tile_style.css">
     <title>z16 Escape Room</title>
 </head>
@@ -18,23 +19,30 @@
 		<a href="authentication_info.html">Authenitication and Access Control</a>
     </div>
 	
-	<h4>
-	In this puzzle, you'll have to reorder the elements in ascending order by sliding tiles into the open space.
-	</h4>
-	
-    <div id="container">
-        <ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-    </div>
+	<div class="flex-container">
+		<div class="flex-child">
+			<div id="container">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex-child-small">
+			<div>
+				<video width="500" height="280" controls>
+					<source src="puzzle2_scene.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</div>
 
 	<footer>
 	      <hr>

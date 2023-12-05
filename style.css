@@ -7,10 +7,13 @@ body {
 	font-family: 'Courier New', monospace;
 }
 
-h1, h4, label {
+h1, h4, label, small {
 	color: #F5F5F5;
 }
 
+a {
+	color: #E0E0E0;
+}
 
 label {
     display: block;
@@ -27,8 +30,8 @@ input {
 }
 
 button {
-    background-color: #4caf50;
-    color: #fff;
+    background-color: #666666;
+    color: #D9534F;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -37,7 +40,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #E0E0E0;
 }
 
 .flex-container {
@@ -64,9 +67,15 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #6B8EAE;
+    color: #D9534F;
     font-family: 'Courier New', monospace;
     font-size: 18px;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+	background-position: right;
+	font-size: 60px;
+	font-weight: bold;
 }
 
 .puzzle-container:hover {
@@ -77,7 +86,7 @@ button:hover {
 #modal {
     width: 60%;
     height: 500px;
-    background: #6B8EAE;
+    background: #666666;
     position: absolute;
     top: 10%;
     left: 50%;
