@@ -43,6 +43,15 @@ button:hover {
     background-color: #E0E0E0;
 }
 
+.correct {
+	background-color: #50C878;
+	color: #000000
+}
+
+.incorrect {
+	color: #EE4B2B;
+}
+
 .flex-container {
     display: flex;
 }
