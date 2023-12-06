@@ -1,8 +1,8 @@
 const checkAnswers = () => {
     console.log("checking answers");
-	if (document.getElementById("q1").value == "True" &&
-		document.getElementById("q2").value == "Quantum" &&
-		document.getElementById("q3").value == "At Rest"){
+	if (document.getElementById("q1").value.toLowerCase() == "true" &&
+		document.getElementById("q2").value.toLowerCase() == "quantum" &&
+		document.getElementById("q3").value.toLowerCase() == "at rest"){
 		console.log("answers correct");
 		showModal();
 	}
